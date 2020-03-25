@@ -1,0 +1,118 @@
+strict graph G {
+	rankdir=LR
+	"github.com/cancerit/cgpBigWig" -- "github.com/dpryan79"
+	"github.com/dpryan79" -- "github.com/igvteam/igv-jupyter"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/igvteam/igv-jupyter" [href="https://github.com/igvteam/igv-jupyter"]
+	"github.com/dpryan79" [href="https://github.com/dpryan79"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/brentp"
+	"github.com/brentp" -- "github.com/eBay/tsv-utils"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/eBay/tsv-utils" [href="https://github.com/eBay/tsv-utils"]
+	"github.com/brentp" [href="https://github.com/brentp"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/brentp"
+	"github.com/brentp" -- "github.com/dnbaker/dashing"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/dnbaker/dashing" [href="https://github.com/dnbaker/dashing"]
+	"github.com/brentp" [href="https://github.com/brentp"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/brentp"
+	"github.com/brentp" -- "github.com/firmai/pandapy"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/firmai/pandapy" [href="https://github.com/firmai/pandapy"]
+	"github.com/brentp" [href="https://github.com/brentp"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/brentp"
+	"github.com/brentp" -- "github.com/telatin/covtobed"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/telatin/covtobed" [href="https://github.com/telatin/covtobed"]
+	"github.com/brentp" [href="https://github.com/brentp"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/XiaoTaoWang"
+	"github.com/XiaoTaoWang" -- "github.com/cmdcolin/awesome-genome-visualization"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/cmdcolin/awesome-genome-visualization" [href="https://github.com/cmdcolin/awesome-genome-visualization"]
+	"github.com/XiaoTaoWang" [href="https://github.com/XiaoTaoWang"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/XiaoTaoWang"
+	"github.com/XiaoTaoWang" -- "github.com/berenslab/rna-seq-tsne"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/berenslab/rna-seq-tsne" [href="https://github.com/berenslab/rna-seq-tsne"]
+	"github.com/XiaoTaoWang" [href="https://github.com/XiaoTaoWang"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/XiaoTaoWang"
+	"github.com/XiaoTaoWang" -- "github.com/firmai/pandapy"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/firmai/pandapy" [href="https://github.com/firmai/pandapy"]
+	"github.com/XiaoTaoWang" [href="https://github.com/XiaoTaoWang"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/XiaoTaoWang"
+	"github.com/XiaoTaoWang" -- "github.com/CSSEGISandData/COVID-19"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/CSSEGISandData/COVID-19" [href="https://github.com/CSSEGISandData/COVID-19"]
+	"github.com/XiaoTaoWang" [href="https://github.com/XiaoTaoWang"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/esebesty"
+	"github.com/esebesty" -- "github.com/eBay/tsv-utils"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/eBay/tsv-utils" [href="https://github.com/eBay/tsv-utils"]
+	"github.com/esebesty" [href="https://github.com/esebesty"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/fcliquet"
+	"github.com/fcliquet" -- "github.com/igvteam/igv-jupyter"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/igvteam/igv-jupyter" [href="https://github.com/igvteam/igv-jupyter"]
+	"github.com/fcliquet" [href="https://github.com/fcliquet"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/xiongxu"
+	"github.com/xiongxu" -- "github.com/CSSEGISandData/COVID-19"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/CSSEGISandData/COVID-19" [href="https://github.com/CSSEGISandData/COVID-19"]
+	"github.com/xiongxu" [href="https://github.com/xiongxu"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/xiongxu"
+	"github.com/xiongxu" -- "github.com/imgag/ClinCNV"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/imgag/ClinCNV" [href="https://github.com/imgag/ClinCNV"]
+	"github.com/xiongxu" [href="https://github.com/xiongxu"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/xiongxu"
+	"github.com/xiongxu" -- "github.com/telatin/covtobed"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/telatin/covtobed" [href="https://github.com/telatin/covtobed"]
+	"github.com/xiongxu" [href="https://github.com/xiongxu"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/sbamin"
+	"github.com/sbamin" -- "github.com/eBay/tsv-utils"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/eBay/tsv-utils" [href="https://github.com/eBay/tsv-utils"]
+	"github.com/sbamin" [href="https://github.com/sbamin"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/zx8754"
+	"github.com/zx8754" -- "github.com/imgag/ClinCNV"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/imgag/ClinCNV" [href="https://github.com/imgag/ClinCNV"]
+	"github.com/zx8754" [href="https://github.com/zx8754"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/chapmanb"
+	"github.com/chapmanb" -- "github.com/dnbaker/dashing"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/dnbaker/dashing" [href="https://github.com/dnbaker/dashing"]
+	"github.com/chapmanb" [href="https://github.com/chapmanb"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/mdozmorov"
+	"github.com/mdozmorov" -- "github.com/gaospecial/ggVennDiagram"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/gaospecial/ggVennDiagram" [href="https://github.com/gaospecial/ggVennDiagram"]
+	"github.com/mdozmorov" [href="https://github.com/mdozmorov"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/mdozmorov"
+	"github.com/mdozmorov" -- "github.com/cmdcolin/awesome-genome-visualization"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/cmdcolin/awesome-genome-visualization" [href="https://github.com/cmdcolin/awesome-genome-visualization"]
+	"github.com/mdozmorov" [href="https://github.com/mdozmorov"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/mdozmorov"
+	"github.com/mdozmorov" -- "github.com/berenslab/rna-seq-tsne"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/berenslab/rna-seq-tsne" [href="https://github.com/berenslab/rna-seq-tsne"]
+	"github.com/mdozmorov" [href="https://github.com/mdozmorov"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/mdozmorov"
+	"github.com/mdozmorov" -- "github.com/telatin/covtobed"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/telatin/covtobed" [href="https://github.com/telatin/covtobed"]
+	"github.com/mdozmorov" [href="https://github.com/mdozmorov"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/itsvenu"
+	"github.com/itsvenu" -- "github.com/gaospecial/ggVennDiagram"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/gaospecial/ggVennDiagram" [href="https://github.com/gaospecial/ggVennDiagram"]
+	"github.com/itsvenu" [href="https://github.com/itsvenu"]
+	"github.com/cancerit/cgpBigWig" -- "github.com/shouldsee"
+	"github.com/shouldsee" -- "github.com/CSSEGISandData/COVID-19"
+	"github.com/cancerit/cgpBigWig" [href="https://github.com/cancerit/cgpBigWig"]
+	"github.com/CSSEGISandData/COVID-19" [href="https://github.com/CSSEGISandData/COVID-19"]
+	"github.com/shouldsee" [href="https://github.com/shouldsee"]
+}
