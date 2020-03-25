@@ -1,5 +1,5 @@
 token=${1:-$token}
-
+repo_acc=${2:-cancerit/cgpBigWig}
 set -ue
 # starred_param
 cat <<EOF >temp.gql
@@ -97,7 +97,8 @@ def jinja2_format(s,**kw):
 	ss = Template(s,undefined=StrictUndefined).render(**kw)
 	return ss
 
-repo_acc = 'cancerit/cgpBigWig'
+repo_acc = '$repo_acc'
+# repo_acc = 'cancerit/cgpBigWig'
 # repo_acc = 'DataBiosphere/toil'
 # repo_acc = 'snakemake/snakemake'
 # repo_acc = 'broadinstitute/cromwell'
