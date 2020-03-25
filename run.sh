@@ -1,65 +1,35 @@
 token=${1:-$token}
 repo_acc=${2:-cancerit/cgpBigWig}
 set -ue
-# starred_param
-cat <<EOF >temp.gql
-query { 
-	user(login:"shouldsee") { 
-		login
-		starredRepositories(last:2) { 
-			nodes { 
-				name 
-				url
-				stargazers(last:80){
-					nodes {
-						login
-						starredRepositories(last:10) {
-							nodes {
-								name
-								url
-							}
-						}
-					}
-				}
-			} 
-		}
-	}
-}
-EOF
 
-cat <<EOF >temp.gql
-query { 
-	user(login:"shouldsee") { 
-		login
-		starredRepositories(last:2) { 
-			nodes { 
-				name 
-				url
-				stargazers(last:80){
-					nodes {
-						login
-						starredRepositories(last:10) {
-							nodes {
-								name
-								url
-							}
-						}
-					}
-				}
-			} 
-		}
-	}
-}
-EOF
-#hasura/graphqurl
-
-# CSSEGISandData/COVID-19
-
-# curl https://api.github.com/graphql -H "Authorization: bearer $token" -X POST -d "{"data":$(cat temp.sql)}"
-# exit 0
-
+# cat <<EOF >temp.gql
+# query { 
+# 	user(login:"shouldsee") { 
+# 		login
+# 		starredRepositories(last:2) { 
+# 			nodes { 
+# 				name 
+# 				url
+# 				stargazers(last:80){
+# 					nodes {
+# 						login
+# 						starredRepositories(last:10) {
+# 							nodes {
+# 								name
+# 								url
+# 							}
+# 						}
+# 					}
+# 				}
+# 			} 
+# 		}
+# 	}
+# }
+# EOF
 # gq https://api.github.com/graphql -H "Authorization: bearer $token" \
 # --queryFile temp.gql >temp.json
+
+
 
 
 python3 -<<EOF 
@@ -171,6 +141,7 @@ from graphviz import Digraph,Graph
 from graphviz import escape,nohtml
 
 
+#### control graph layout
 # g = Graph('G',strict=True,engine="neato",graph_attr=dict(nodesep="1."))
 # g.attr(overlap="scalexy")
 # # g.attr(overlap="compress")
@@ -180,6 +151,7 @@ from graphviz import escape,nohtml
 # g.attr(nodesep='1.')
 # # g.attr(sep="+1")
 # # g.attr(sep="+1")
+
 
 g = Graph('G',strict=True,engine="dot")
 # g.attr(rankdir='TB')
