@@ -1,5 +1,7 @@
 # github_graph
 
+*Do you remember the last time you regretting not coming across a great repository earlier in your life? Let's browse repository using the co-starring graph!*
+
 Intended for visualisation of github repo-user-graph using github v4 graphQL api.
 
 ### Require
