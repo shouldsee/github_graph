@@ -1,0 +1,7 @@
+#uvloop
+fastapi
+uvicorn
+gql
+jinja2
+cachetools
+graphviz
