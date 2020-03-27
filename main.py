@@ -1,13 +1,27 @@
 from fastapi import FastAPI, HTTPException
 
 from fastapi.responses import HTMLResponse
+from fastapi.responses import RedirectResponse, Response
+import requests
+# resp = requests.get("http://newflaw.com")
 app = FastAPI()
 
-
+@app.get("/blog/{url:path}")
+def get_blog(url):
+	# resp = 
+	resp = requests.get("http://localhost:9000/%s"%url)
+	resp = Response(
+		content=resp.content,
+		status_code = resp.status_code,
+		headers = resp.headers,
+		media_type=resp.headers.get('Content-Type', '')
+		)
+	return resp
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+	return RedirectResponse('/blog')
+    # return {"Hello": "World"}
 
 
 @app.get("/items/{item_id}")
@@ -16,12 +30,22 @@ def read_item(item_id: int, q: str = None):
 
 @app.get("/repo/{owner}/{name}", response_class = HTMLResponse)
 def show_repo_graph(owner: str, name: str):
+	import time
+	t0 = time.time()
 	nodes = query_repo_graph(owner, name)
 	svg = render_graph( nodes)
-	return svg
+	dt = time.time() - t0
+	dt = "%.3f"%dt
+
 	temp = '''
 	<html>
 	<body>
+	<p>
+	Runtime: {{dt}}s
+	</p>
+	<p>
+	Root: Repo: {{owner}}/{{name}}
+	</p>
 	{{svg}}
 	</body>
 	</html>'''
@@ -167,6 +191,9 @@ def render_graph(nodes):
 
 	if 1:
 		i = -1
+		n1 = nodes[0]['url']
+		g.node(_label(n1),href=n1)
+
 		for n1,sg,n2 in edges:
 			if not is_included(n1,sg,n2):
 				continue
