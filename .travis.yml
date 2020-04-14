@@ -1,7 +1,3 @@
-notifications:
-  slack: wtsi-cgpit:ptUMR1tkNyZJYd9TpGoss8WR
-  email: false
-
 sudo: false
 
 services:
