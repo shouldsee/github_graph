@@ -4,6 +4,11 @@
 
 Intended for visualisation of github repo-user-graph using github v4 graphQL api.
 
+### Hosted endpoints
+
+- http://newflaw.com/github_graph/docs
+- http://newflaw.com/github_graph/repo/fatedier/frp
+
 ### Require
 
 1. `$token`: A personal github token to use graphQL api: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
